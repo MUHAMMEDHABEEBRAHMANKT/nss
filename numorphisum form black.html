@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script defer>
+        window.onload =function(){
+            alert("PLZ ENTER VALID INFORMATION \n COLLECTING DATAS FOR FUTHURE")
+        }
+        let form=document.querySelector("form")
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault()
+        })
+    
+       </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+<header>
+    <div class="back">
+      
+    </div>
+</header>
+   <div class="container">
+    <div class="text">feedback</div>
+    <form action="https://formspree.io/f/meqwjqbo" method="post">
+        <div class="fild">
+            <span class="fa fa-user-o"></span>
+            <input type="text"placeholder="enter your name" name="Name" required id="name">
+        </div>
+        <div class="fild">
+            <span class="fa fa-whatsapp"></span>
+            <input type="number"  placeholder="contact no" name="Number" required id="number">
+        </div>
+        <div class="fild">
+            <span class="fa fa-envelope-o"></span>
+           
+            <input type="email"placeholder="enter your email" name="Email"required  id="email">
+        </div>
+       
+        <div class="fild">
+            <span class="fa fa-message"></span>
+            <textarea name="Addres" placeholder="enter your feedback" id="addres"   ></textarea>
+        </div>
+     <button type="submit">submit</button>
+    </form>
+</div>
+<div class="back"><a href="index.html"><i class="fa fa-house"> home</i></a></div>
+  
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #0316ed;
+           height: 100vh;
+           align-items: center;
+           justify-content: center;
+           flex-direction: column;
+           display: flex;
+        text-align: center;
+        }
+        .container{
+                           padding:40px 30px;
+           border-radius: 10px;
+            width: 330px;
+            background:#0316ed;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.859),
+                        -3px -3px 9px   rgba(248, 248, 248, 0.9);
+        }
+        .container .text{
+            color: #010101;
+            text-shadow: 2px -2px 0px #ffffff;
+            font-size: 20px;
+            font-weight: 900;
+            font-family: Dune_Rise;
+            text-transform: capitalize;
+            margin-bottom: 25px;
+                }
+              
+                @font-face {
+             font-family:"Dune_Rise";
+                   src: url('font/Dune_Rise.otf')
+              }
+                form .fild{
+                    height: 36px;
+                    width: 100%;
+                    display: flex;
+                    font-family: 'Audiowide',cursive;
+                }
+                .fild:nth-child(even){
+                    margin-bottom: 20px;
+                }
+                .fild:nth-child(odd){
+                    margin-bottom: 20px;
+                }
+                .fild input,textarea{
+                    height: 100%;
+                    width: 100%;
+                    outline: none;
+                    font-size: 20px;
+                    border: none;
+                    border-radius: 17px; 
+                    font-family: 'Caveat', cursive;
+                    padding-left: 45px;
+                    background:#0316ed;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.991),
+                        inset -3px -3px 9px   rgba(248, 248, 248, 0.295);
+                        color: #000000;
+                }
+            /* input:focus {
+                border-radius: 5px;
+                border:2px solid #ffffff; 
+            } */
+            input:focus,
+            input:valid {
+                border-radius: 5px;
+                border:2px solid #ffffff; 
+                background: #fcf2f2;
+            }
+            textarea:focus{
+            background: #fcf2f2;
+                border-radius: 5px;
+                border:2px solid #ffffff; 
+               
+            }
+                .fild span{
+                    position: absolute;
+                    width: 50px;
+                    color: #080808;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 40px;
+                }
+               textarea{
+                background: transparent;
+                width: 320px;
+                    text-align: center;
+                    resize: none;
+                        }
+
+                        input::placeholder{
+                            color:#6363f4a2;
+                            text-transform: capitalize;
+                            font-size: 17px;
+                        }
+                        textarea::placeholder{
+                            color: #6363f4a2;
+                            font-size: 17px;
+                            text-transform: capitalize;
+                        }
+                       button{
+                            width: 100%;
+                            height: 40px;
+                            font-size: 18px;
+                            font-weight: 800;
+                            font-family: Dune_Rise;
+                            outline: none;
+                            border: none;
+                            border-radius: 20px;
+                            background-color: #0316ed;
+                            box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.991),
+                                         -3px -3px 9px   rgba(248, 248, 248, 0.295);
+                            color: #0c0c0c;
+                            cursor: pointer;
+           }
+           button:focus{
+            box-shadow:inset 2px 2px 5px rgba(0, 0, 0, 0.991),
+                        inset -3px -3px 9px   rgba(248, 248, 248, 0.295);
+                           
+           }
+        /* number increes dicrees button rimove */
+      input::-webkit-inner-spin-button {
+        display: none;
+      }
+      .back a{
+        padding: 2px 20px;
+        background-color: #fcf2f2;
+        color: #0c0c0c;
+        font-family: sans-serif;
+        z-index: -11;
+      }
+      
+    </style>
+</body>
+</html>
